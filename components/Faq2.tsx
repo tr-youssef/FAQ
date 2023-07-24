@@ -18,16 +18,7 @@ const Faq2: React.FC<Faq2Props> = ({ data }) => {
   return (
     <div className="py-6">
       {data.map((item, index) => (
-        <Accordion
-          index={index}
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
-          item={item}
-          last={index !== data.length - 1}
-          iconClose={<FaChevronRight />}
-          iconOpen={<FaChevronDown />}
-          style="FAQ2"
-        />
+        <Accordion key={index} index={index} activeIndex={activeIndex} setActiveIndex={setActiveIndex} item={item} last={index !== data.length - 1} iconClose={<FaChevronRight />} iconOpen={<FaChevronDown />} style="FAQ2" />
       ))}
     </div>
   );

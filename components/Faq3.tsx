@@ -18,16 +18,7 @@ const Faq3: React.FC<Faq3Props> = ({ data }) => {
   return (
     <div className="">
       {data.map((item, index) => (
-        <Accordion
-          index={index}
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
-          item={item}
-          last={index !== data.length - 1}
-          iconClose={<FaMinusCircle />}
-          iconOpen={<FaPlusCircle />}
-          style="FAQ3"
-        />
+        <Accordion key={index} index={index} activeIndex={activeIndex} setActiveIndex={setActiveIndex} item={item} last={index !== data.length - 1} iconClose={<FaMinusCircle />} iconOpen={<FaPlusCircle />} style="FAQ3" />
       ))}
     </div>
   );
