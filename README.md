@@ -1,2 +1,0 @@
-# FAQ
-Created with CodeSandbox
